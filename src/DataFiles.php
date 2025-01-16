@@ -10,7 +10,7 @@ use Shuchkin\SimpleXLSXGen;
  * @author Rudy Mas <rudy.mas@rudymas.be>
  * @copyright 2025, rudymas.be. (http://www.rudymas.be/)
  * @license https://opensource.org/licenses/GPL-3.0 GNU General Public License, version 3 (GPL-3.0)
- * @version 2025.01.16.0
+ * @version 2025.01.16.1
  * @package Tigress\DataFiles
  */
 class DataFiles
@@ -28,7 +28,7 @@ class DataFiles
      */
     public function version(): string
     {
-        return '2025.01.16.0';
+        return '2025.01.16';
     }
 
     /**
@@ -110,6 +110,7 @@ class DataFiles
         string $filepath = '',
         string $delimiter = ',',
         string $enclosure = '"',
+        string $escape = '\\',
         bool   $addIndexStart = true,
         bool   $addIndexEnd = false,
         bool   $addBOM = false
@@ -136,7 +137,7 @@ class DataFiles
         }
 
         foreach ($lineArray as $line) {
-            fputcsv($fp, $line, $delimiter, $enclosure);
+            fputcsv($fp, $line, $delimiter, $enclosure, $escape);
         }
 
         fclose($fp);
