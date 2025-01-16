@@ -100,6 +100,7 @@ class DataFiles
      * @param string $filepath
      * @param string $delimiter
      * @param string $enclosure
+     * @param string $escape
      * @param bool $addIndexStart
      * @param bool $addIndexEnd
      * @param bool $addBOM
