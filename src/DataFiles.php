@@ -26,7 +26,7 @@ class DataFiles
      *
      * @return string
      */
-    public function version(): string
+    public static function version(): string
     {
         return '2025.01.16';
     }
