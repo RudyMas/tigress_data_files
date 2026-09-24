@@ -2,7 +2,7 @@
 
 **Version:** 2025.12.09  
 **Package:** `tigress/data-files`  
-**License:** GPL-3.0-or-later  
+**License:** Apache 2.0  
 **Requires:** PHP >= 8.5, `shuchkin/simplexlsxgen` >= 1.4
 
 ---
